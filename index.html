@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <title>Encriptador de Texto con JavaScript</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="form box">
+      <form id="formulario">
+        <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" maxlength="150"></textarea>
+        <div class="button-container">
+          <button class="btn" type="button" id="btn-encriptar">Encriptar</button>
+          <button class="btn" type="button" id="btn-desencriptar">Desencriptar</button>
+        </div>
+      </form>
+    </section>
+    
+    <section class="msg-box">
+      <textarea class="text-noinput" name="mensaje-texto" id="mensaje-texto"></textarea>              
+      <input type="submit" value="Copiar texto" id="btn-copy">
+    </section>
+    </div>
+    <div class="footer">
+        <img class="github" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github logo">
+        <a href="https://github.com/matiasadr" class="githubText">/matiasadr/a>
+    </div>
+  </main>
+<script src="encriptador.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lib/sweet-alert.css">
+<script>swal({
+  title: "Atención",
+  text: "Usar solo letras minúsculas sin tildes",
+  icon: "info",
+  button: "Entendido",
+});
+</script>
+
+</body>
+</html>
